@@ -7,6 +7,8 @@ while Correct == false do
   guess = io.read()
   if password == guess then
     Correct = true
+    attempts++
+    print("That took " + attempts +" attempts!")
   else
     print("Please try again!")
     attempts++
